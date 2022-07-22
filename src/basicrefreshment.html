@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let myArray = [
+            {
+                id: 1,
+                name: "shalu"
+            },
+            {
+                id: 2,
+                name: "parth"
+            },
+            {
+                id: 3,
+                name: "kunal"
+            }
+        ]
+
+        let filteredArray = myArray.filter((item) => item.id !== 2)
+        console.log(filteredArray)
+        // const myDate = new Date()
+        // console.log(myDate.getTime().toString())
+
+        // how to create promise
+        // let lotteryNumber = 100;
+        // let lotteryTicket = new Promise(function (resolve, reject) {
+        //     setTimeout(() => {
+        //         if (lotteryNumber === 10) {
+        //             resolve("you won")
+        //         }
+        //         else {
+        //             reject("you lost")
+        //         }
+        //     }, 1000);
+        // })
+
+        // how to handle promise
+        // lotteryTicket.then(function (res) {
+        //     document.write(res)
+        //     // then code will run when promise is reolved
+        // }).catch(function (err) {
+        //     document.write(err)
+        //     // catch will run when promise is rejected
+        // })
+    </script>
+
+
+
+    <!-- <script>
+        // How to create promise
+        let lotteryNumber = 100;
+        let lotteryTicket = new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                if (lotteryNumber === 10) {
+                    resolve("you have won the lottery")
+                }
+                else {
+                    reject("better luck next time")
+                }
+            }, 1000)
+        })
+
+        // how to handle Promise
+        lotteryTicket.then(function (res) {
+            document.write(res)
+        }).catch(function (err) {
+            document.write(err)
+        })
+    </script> -->
+</body>
+
+</html>
